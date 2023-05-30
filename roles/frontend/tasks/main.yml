@@ -1,10 +1,4 @@
 - name: Hello from Frontend
-  tasks:
-    -name: Print from frontend
-     ansible.builtin.debug:
-       msg: Print from frontend
-     -name: Print frontend hostname
-      ansible.builtin.debug:
-        msg: Hostname ={{ansible_hostname}}
-
+  ansible.builtin.debug:
+    msg: Print from frontend
 
