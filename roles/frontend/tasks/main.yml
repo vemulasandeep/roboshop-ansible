@@ -1,6 +1,10 @@
 - name: Hello from Frontend
-  ansible.builtin.debug:
-    msg: Frontend Role
-  -name: Print hostname
-   ansible.builtin.debug:
-     msg: Hotname={{ansible_hostname}}
+  tasks:
+    -name: Print from frontend
+     ansible.buitlin.debug:
+       msg: Print from frontend
+     -name: Print frontend hostname
+      ansible.builtin.debug:
+        msg: Hostname ={{ansible_hostname}}
+
+
