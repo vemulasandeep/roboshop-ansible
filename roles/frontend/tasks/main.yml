@@ -2,3 +2,9 @@
   ansible.builtin.debug:
     msg: Print from frontend
 
+- name: Print hostname
+  ansible.builtin.debug:
+    msg: HOSTNAME = {{ansible_hostname}}
+
+
+
