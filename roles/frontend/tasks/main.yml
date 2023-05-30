@@ -1,7 +1,7 @@
 - name: Hello from Frontend
   tasks:
     -name: Print from frontend
-     ansible.buitlin.debug:
+     ansible.builtin.debug:
        msg: Print from frontend
      -name: Print frontend hostname
       ansible.builtin.debug:
